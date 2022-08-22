@@ -12,6 +12,6 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      url: https://github.com/gm2552/hungryman-crawler.git
+      url: https://github.com/sample-accelerators/hungryman
       ref:
-        branch: main
+        branch: tap-1-3

@@ -48,7 +48,7 @@
 #@ if data.values.enableSecurity == True:
 #@ return "secure-ui"
 #@ end
-#@ return "main"
+#@ return "tap-1-3"
 #@ end
 
 ---
@@ -69,9 +69,9 @@ spec:
   serviceClaims: #@ buildServiceClaimsBinding(False, False, True)
   source:
     git:
-      url: https://github.com/gm2552/hungryman.git
+      url: https://github.com/sample-accelerators/hungryman
       ref:
-        branch: main
+        branch: tap-1-3
     subPath: hungryman-api-gateway
     
 ---
@@ -93,9 +93,9 @@ spec:
   serviceClaims: #@ buildServiceClaimsBinding(True, True, True)
   source:
     git:
-      url: https://github.com/gm2552/hungryman.git
+      url: https://github.com/sample-accelerators/hungryman
       ref:
-        branch: main
+        branch: tap-1-3
     subPath: hungryman-search
 ---
 
@@ -116,9 +116,9 @@ spec:
   serviceClaims: #@ buildServiceClaimsBinding(False, True, False)
   source:
     git:
-      url: https://github.com/gm2552/hungryman.git
+      url: https://github.com/sample-accelerators/hungryman
       ref:
-        branch: main
+        branch: tap-1-3
     subPath: hungryman-search-proc
     
 ---
@@ -140,9 +140,9 @@ spec:
   serviceClaims: #@ buildServiceClaimsBinding(False, True, False)
   source:
     git:
-      url: https://github.com/gm2552/hungryman.git
+      url: https://github.com/sample-accelerators/hungryman
       ref:
-        branch: main
+        branch: tap-1-3
     subPath: hungryman-notify
 ---
 
@@ -164,9 +164,9 @@ spec:
   serviceClaims: #@ buildServiceClaimsBinding(True, True, True)
   source:
     git:
-      url: https://github.com/gm2552/hungryman.git
+      url: https://github.com/sample-accelerators/hungryman
       ref:
-        branch: main
+        branch: tap-1-3
     subPath: hungryman-availability
 
 ---
@@ -187,7 +187,7 @@ spec:
       app.kubernetes.io/part-of: hungryman
   source:
     git:
-      url: https://github.com/gm2552/hungryman.git
+      url: https://github.com/sample-accelerators/hungryman
       ref:
         branch: #@ buildUIGitBranch()
     subPath: hungryman-ui

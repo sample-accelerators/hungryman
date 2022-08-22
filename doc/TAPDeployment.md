@@ -5,7 +5,7 @@ The Hungryman TAP deployment options are enabled through a Tanzu application acc
 To install the accelerator into your TAP cluster, run the following command:
 
 ```
-tanzu acc create hungryman --git-repo https://github.com/gm2552/hungryman --git-branch main
+tanzu acc create hungryman --git-repo https://github.com/sample-accelerators/hungryman --git-branch tap-1-3
 ```
 
 ## Prerequisites
@@ -109,12 +109,12 @@ kubectl get workload -n workloads
 You should see a result similar to the following:
 
 ```
-hungryman                https://github.com/gm2552/hungryman.git   source-to-url   True    Ready    58m
-hungryman-availability   https://github.com/gm2552/hungryman.git   source-to-url   True    Ready    58m
-hungryman-notify         https://github.com/gm2552/hungryman.git   source-to-url   True    Ready    58m
-hungryman-search         https://github.com/gm2552/hungryman.git   source-to-url   True    Ready    58m
-hungryman-search-proc    https://github.com/gm2552/hungryman.git   source-to-url   True    Ready    58m
-hungryman-ui             https://github.com/gm2552/hungryman.git   source-to-url   True    Ready    58m
+hungryman                https://github.com/sample-accelerators/hungryman   source-to-url   True    Ready    58m
+hungryman-availability   https://github.com/sample-accelerators/hungryman   source-to-url   True    Ready    58m
+hungryman-notify         https://github.com/sample-accelerators/hungryman   source-to-url   True    Ready    58m
+hungryman-search         https://github.com/sample-accelerators/hungryman   source-to-url   True    Ready    58m
+hungryman-search-proc    https://github.com/sample-accelerators/hungryman   source-to-url   True    Ready    58m
+hungryman-ui             https://github.com/sample-accelerators/hungryman   source-to-url   True    Ready    58m
 ```
 
 ## Configuration Option Overview  
@@ -260,7 +260,7 @@ The Hungryman source repo contains a full TAP catalog configuration that is loca
 Ex:
 
 ```
-https://github.com/gm2552/hungryman/blob/main/catalog/catalog-info.yaml
+https://github.com/sample-accelerators/hungryman/blob/tap-1-3/catalog/catalog-info.yaml
 ```
 
 **NOTE:** It is highly recommended that you create your own code repository first and then import the catalog from your repository.  You will most likely need update the URLs in the files below to properly import the catalog which contains component API configuration (API Docs). 
