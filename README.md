@@ -1,5 +1,8 @@
 # Hungryman
 
+> **NOTE** This repo has been archived and the sample has been renamed to `Where for Dinner` and moved to:  
+> https://github.com/vmware-tanzu/application-accelerator-samples/tree/main/where-for-dinner
+
 ## Deployment Guides
 
 The Hungryman application can technically be deployed on almost any Cloud Native Buildpack enabled platform.  Below are detailed deployment instructions for various platforms:
